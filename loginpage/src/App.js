@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Signup from './Signup';
 import Login from './Login';
 import Home from './Home';
+// import Welcome from './Welcome';
+
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -15,10 +17,12 @@ function App() {
       
       {isAuthenticated ? (
         <Home isAuthenticated={isAuthenticated} />
+        // <Welcome username="" />
       ) : (
         <>
           <Signup />
           <Login onLogin={handleLogin} />
+       
         </>
       )}
     </div>

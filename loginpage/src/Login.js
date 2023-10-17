@@ -23,7 +23,7 @@ function Login({ onLogin }) {
 
   return (
     <div>
-      <h2>Login</h2>onLogin
+      <h2>Login</h2>
       <input
         type="text" name="username"placeholder="Username"
         value={formData.username}
@@ -38,5 +38,6 @@ function Login({ onLogin }) {
     </div>
   );
 }
+
 
 export default Login;
